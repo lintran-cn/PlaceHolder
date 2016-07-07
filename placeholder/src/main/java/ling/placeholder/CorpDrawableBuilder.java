@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,6 @@ import java.util.List;
 /**
  * 默认图片生成器
  * 指定背景颜色和默认原图之后，根据imageView尺寸大小自动生成该大小的默认图片
- * <p/>
  * Created by ling(quan.ling@hotmail.com) on 16/5/11.
  */
 public class CorpDrawableBuilder {
@@ -37,7 +35,7 @@ public class CorpDrawableBuilder {
      * @param bgColor 背景颜色
      * @return 占位符Drawable
      */
-    public static Drawable build(Context context, @DrawableRes int resId, int bgColor) {
+    public static Drawable build(Context context, int resId, int bgColor) {
         return build(context.getResources().getDrawable(resId), bgColor);
     }
 

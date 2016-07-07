@@ -10,14 +10,15 @@ import android.graphics.drawable.Drawable;
 public interface CorpSizeMatcher {
     /**
      * 获取中心图片大小
-     * @param bounds    控件尺寸
+     *
+     * @param origin 原Drawable
+     * @param bounds 控件尺寸
      * @return 图片Rect
      */
     Rect getBounds(Drawable origin, Rect bounds);
 
-     abstract class MatcherFactory {
+    abstract class MatcherFactory {
         /**
-         *
          * @param origin 原drawble
          * @param bounds imageview大小
          * @return 匹配器

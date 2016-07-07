@@ -1,4 +1,4 @@
-package ling.placeholder;
+package ling.placeholder.demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+import ling.placeholder.CorpDrawableBuilder;
 
 
 public class MainActivity extends AppCompatActivity {
